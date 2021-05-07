@@ -1,10 +1,7 @@
 version: '2'
 services:
     hello-docker:
-        container_name: hello-docker
-        build:
-            context: hello-docker
-            dockerfile: Dockerfile
+        build: .
         image: hello-docker
         ports:
             - "8080:8080"
