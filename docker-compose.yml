@@ -1,11 +1,11 @@
 version: '2'
 services:
-    demo-0.0.1-SNAPSHOT:
-        container_name: demo-0.0.1-SNAPSHOT
+    hello-docker:
+        container_name: hello-docker
         build:
-            context: demo-0.0.1-SNAPSHOT
+            context: hello-docker
             dockerfile: Dockerfile
-        image: demo-0.0.1-SNAPSHOT:latest
+        image: hello-docker
         ports:
             - "8080:8080"
         environment:
